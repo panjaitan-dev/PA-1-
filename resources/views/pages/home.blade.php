@@ -1157,7 +1157,7 @@
                     <div class="destinasi-number">01 — GEOSITE</div>
                     <h3>Meat</h3>
                     <div class="destinasi-location">Desa Tampahan, Kecamatan Tampahan, Kabupaten Toba</div>
-                    <p class="destinasi-desc">Desa Meat adalah salah satu desa wisata yang terletak di Kecamatan Balige, Kabupaten Toba, di tepi Danau Toba.</p>
+                    <p class="destinasi-desc">Batu Hoda merupakan salah satu destinasi wisata yang terletak di Kecamatan Balige, Kabupaten Toba, di tepi Danau Toba yang menawarkan keindahan alam dan panorama yang memukau</p>
                     <a href="{{ url('/geosite/meat') }}" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
                 </div>
             </div>
