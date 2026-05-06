@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <style>
     /* ==================== ANIMASI GLOBAL ==================== */
@@ -1158,7 +1156,7 @@
                     <h3>Meat</h3>
                     <div class="destinasi-location">Desa Tampahan, Kecamatan Tampahan, Kabupaten Toba</div>
                     <p class="destinasi-desc">Desa Meat adalah salah satu desa wisata yang terletak di Kecamatan Balige, Kabupaten Toba, di tepi Danau Toba.</p>
-                    <a href="{{ url('/geosite/meat') }}" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
+                    <a href="<?php echo e(url('/geosite/meat')); ?>" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
                 </div>
             </div>
             
@@ -1172,7 +1170,7 @@
                     <h3>Batu Bahisan</h3>
                     <div class="destinasi-location">Desa Aek Bolon Jae, Balige</div>
                     <p class="destinasi-desc">Batu Basiha merupakan salah satu situs batu bersejarah di kawasan Balige yang memiliki nilai budaya dan legenda dalam masyarakat Batak Toba.</p>
-                    <a href="{{ url('/geosite/batu-bahisan') }}" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
+                    <a href="<?php echo e(url('/geosite/batu-bahisan')); ?>" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
                 </div>
             </div>
             
@@ -1186,7 +1184,7 @@
                     <h3>Liang Sipege</h3>
                     <div class="destinasi-location">Hutagaol Peatalun, Balige</div>
                     <p class="destinasi-desc">Gua Liang Sipege adalah destinasi wisata alam yang terletak di Desa Simarmar Pea Talun Hutagaol, Kecamatan Balige, Kabupaten Toba.</p>
-                    <a href="{{ url('/geosite/liang-sipege') }}" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
+                    <a href="<?php echo e(url('/geosite/liang-sipege')); ?>" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
                 </div>
             </div>
         </div>
@@ -1322,4 +1320,5 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script>AOS.init({ duration: 800, once: true, offset: 50 });</script>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\.kuliah\PA 1\PA-1-\resources\views/pages/home.blade.php ENDPATH**/ ?>
