@@ -1086,7 +1086,7 @@
     <div class="hero-content">
         <div>
             <div class="hero-subtitle">Global Geopark</div>
-            <h1 class="hero-title"> simanindo batuhoda<br>LIANG SIPEGE</h1>
+            <h1 class="hero-title"> SIMANINDO - BATUHODA</h1>
             <div class="hero-divider"></div>
             <a href="#destinasi" class="hero-btn">Jelajahi Sekarang</a>
         </div>
