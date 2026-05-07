@@ -1,8 +1,6 @@
-@extends('layouts.app')
+<?php $__env->startSection('title', 'Kontak - Geosite Danau Toba'); ?>
 
-@section('title', 'Kontak - Geosite Danau Toba')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
@@ -407,28 +405,28 @@
             <div class="info-card">
                 <h3 class="info-title">Destinasi Unggulan</h3>
                 <div class="dest-list">
-                    <div class="dest-item" onclick="window.location.href='{{ url('/geosite/meat') }}'">
+                    <div class="dest-item" onclick="window.location.href='<?php echo e(url('/geosite/meat')); ?>'">
                         <div class="dest-icon"><i class="fas fa-umbrella-beach"></i></div>
                         <div class="dest-info">
                             <h4>Meat Village</h4>
                             <p>Desa wisata budaya di tepi Danau Toba</p>
                         </div>
                     </div>
-                    <div class="dest-item" onclick="window.location.href='{{ url('/geosite/batu-bahisan') }}'">
+                    <div class="dest-item" onclick="window.location.href='<?php echo e(url('/geosite/batu-bahisan')); ?>'">
                         <div class="dest-icon"><i class="fas fa-mountain"></i></div>
                         <div class="dest-info">
                             <h4>Batu Bahisan</h4>
                             <p>Situs batu bersejarah dengan pemandangan indah</p>
                         </div>
                     </div>
-                    <div class="dest-item" onclick="window.location.href='{{ url('/geosite/liang-sipege') }}'">
+                    <div class="dest-item" onclick="window.location.href='<?php echo e(url('/geosite/liang-sipege')); ?>'">
                         <div class="dest-icon"><i class="fas fa-cave"></i></div>
                         <div class="dest-info">
                             <h4>Liang Sipege</h4>
                             <p>Gua alami dengan stalaktit dan stalakmit</p>
                         </div>
                     </div>
-                    <div class="dest-item" onclick="window.location.href='{{ url('/galeri') }}'">
+                    <div class="dest-item" onclick="window.location.href='<?php echo e(url('/galeri')); ?>'">
                         <div class="dest-icon"><i class="fas fa-camera"></i></div>
                         <div class="dest-info">
                             <h4>Galeri Foto</h4>
@@ -472,4 +470,5 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\PA-1-\resources\views/pages/kontak.blade.php ENDPATH**/ ?>
