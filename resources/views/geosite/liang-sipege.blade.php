@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Liang Sipege - Geosite Danau Toba</title>
+    <title>Museum Huta Bolon Simanindo - Geosite Danau Toba</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
@@ -119,7 +119,7 @@
         .hero {
             height: 55vh;
             min-height: 450px;
-            background: linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.7)), url('/image/liang-sipege-hero.jpg');
+            background: linear-gradient(rgba(0,51,102,0.6), rgba(0,51,102,0.7)), url('/image/huta-bolon-hero.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -246,7 +246,7 @@
         <div class="nav-logo">
             <img src="[GANTI_LINK_BENDERA]" alt="Bendera" class="flag-img">
             <div class="logo-divider"></div>
-            <img src="[GANTI_LINK_DEL]" alt="D el" class="del-img">
+            <img src="[GANTI_LINK_DEL]" alt="Del" class="del-img">
             <div class="logo-divider"></div>
             <div class="logo-text">
                 <h4>GEOTOBA</h4>
@@ -275,8 +275,8 @@
 <!-- HERO -->
 <section class="hero">
     <div data-aos="fade-up">
-        <h1 class="hero-title">LIANG SIPEGE</h1>
-        <p class="hero-subtitle">Pulau Sibandang · Danau Toba</p>
+        <h1 class="hero-title">MUSEUM HUTA BOLON</h1>
+        <p class="hero-subtitle">Desa Simanindo · Pulau Samosir · Danau Toba</p>
     </div>
 </section>
 
@@ -288,24 +288,37 @@
             <div class="divider"></div>
         </div>
         <div class="sejarah-grid">
+
+            <!-- Sejarah 1 -->
             <div class="sejarah-item" data-aos="fade-right">
-                <div class="sejarah-image"><img src="/image/liang/sejarah1.jpg" alt="Sejarah 1"></div>
+                <div class="sejarah-image">
+                    <img src="/image/hutabolon/sejarah1.jpg" alt="Rumah Adat Huta Bolon">
+                </div>
                 <div class="sejarah-text">
-                    <p>Liang Sipege dalam bahasa Batak berarti "goa yang curam". Goa ini dipercaya oleh masyarakat setempat sebagai tempat pertapaan para raja-raja Batak zaman dahulu. Beberapa artefak kuno ditemukan di dalam goa, seperti gerabah pecah, peralatan dari batu, dan bekas pembakaran.</p>
+                    <p>Museum Huta Bolon Simanindo merupakan kompleks rumah adat Batak Toba yang terletak di Desa Simanindo, ujung utara Pulau Samosir, Kabupaten Samosir, Sumatera Utara. Kompleks ini dibangun pada tahun 1895 oleh Raja Sidauruk sebagai kediaman resmi beserta keluarga dan kerabatnya. Bangunan utama "Rumah Bolon" memiliki 14 ruangan yang mencerminkan jumlah istri sang raja, dengan tanduk kerbau pada atapnya yang melambangkan 10 generasi dinasti Batak.</p>
                 </div>
             </div>
+
+            <!-- Sejarah 2 -->
             <div class="sejarah-item reverse" data-aos="fade-left">
-                <div class="sejarah-image"><img src="/image/liang/sejarah2.jpg" alt="Sejarah 2"></div>
+                <div class="sejarah-image">
+                    <img src="/image/hutabolon/sejarah2.jpg" alt="Koleksi Museum Huta Bolon">
+                </div>
                 <div class="sejarah-text">
-                    <p>Goa ini terbentuk secara alami dari proses geologi selama ribuan tahun akibat aktivitas vulkanik dan erosi air. Formasi stalaktit dan stalakmit yang indah merupakan hasil dari proses tetesan air yang mengandung mineral kalsium selama bertahun-tahun.</p>
+                    <p>Sejak tahun 1969, kompleks istana Raja Sidauruk ini resmi dijadikan museum terbuka untuk umum oleh pemerintah, dengan tujuan melestarikan dan memperkenalkan warisan budaya Batak Toba kepada dunia. Museum ini menyimpan koleksi peninggalan leluhur Batak Toba, antara lain <em>parhalaan</em> (penanggalan tradisional Batak), <em>pustaha laklak</em> (kitab kuno dari kulit kayu), <em>tunggal panaluan</em> (tongkat sakral para datu/pemimpin adat), dan <em>solu bolon</em> (perahu besar tradisional). Museum ini termasuk dalam kawasan Geosite Simanindo–Batu Hoda dalam Geopark Kaldera Toba yang diakui UNESCO.</p>
                 </div>
             </div>
+
+            <!-- Sejarah 3 -->
             <div class="sejarah-item" data-aos="fade-right">
-                <div class="sejarah-image"><img src="/image/liang/sejarah3.jpg" alt="Sejarah 3"></div>
+                <div class="sejarah-image">
+                    <img src="/image/hutabolon/sejarah3.jpg" alt="Pertunjukan Tor-Tor dan Sigale-gale">
+                </div>
                 <div class="sejarah-text">
-                    <p>Sekarang, Liang Sipege menjadi destinasi favorit bagi wisatawan petualang dan peneliti geologi. Keindahan di dalam goa yang eksotis serta nilai sejarah dan geologinya yang tinggi menjadikan tempat ini sebagai salah satu geosite unggulan di Danau Toba.</p>
+                    <p>Hingga kini, Museum Huta Bolon Simanindo tetap menjadi pusat hidup kebudayaan Batak Toba. Pengunjung dapat menyaksikan pertunjukan tari <em>Tor-Tor</em> diiringi musik gondang sabangunan yang otentik, serta atraksi boneka kayu <em>Sigale-gale</em> yang bergerak mengikuti irama musik — sebuah warisan budaya tak benda yang unik dan tak tertandingi. Arsitektur tradisional dengan atap piramida beratap ijuk, dinding papan kayu berukir <em>gorga</em>, serta gerbang batu yang kokoh menjadikan tempat ini sebagai destinasi wisata budaya unggulan di kawasan Danau Toba.</p>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -316,14 +329,13 @@
         <div class="section-title" data-aos="fade-up">
             <h2>Galeri</h2>
             <div class="divider"></div>
-            <p>Keindahan Liang Sipege</p>
+            <p>Keindahan dan Kekayaan Budaya Museum Huta Bolon Simanindo</p>
         </div>
         <div class="galeri-grid" id="galeriGrid">
-            <div class="galeri-item"><img src="/image/liang/galeri1.jpg" alt="Galeri 1"></div>
-            <div class="galeri-item"><img src="/image/liang/galeri2.jpg" alt="Galeri 2"></div>
-            <div class="galeri-item"><img src="/image/liang/galeri3.jpg" alt="Galeri 3"></div>
-            <div class="galeri-item"><img src="/image/liang/galeri4.jpg" alt="Galeri 4"></div>
-           
+            <div class="galeri-item"><img src="/image/hutabolon/galeri1.jpg" alt="Galeri 1"></div>
+            <div class="galeri-item"><img src="/image/hutabolon/galeri2.jpg" alt="Galeri 2"></div>
+            <div class="galeri-item"><img src="/image/hutabolon/galeri3.jpg" alt="Galeri 3"></div>
+            <div class="galeri-item"><img src="/image/hutabolon/galeri4.jpg" alt="Galeri 4"></div>
         </div>
     </div>
 </section>
@@ -331,9 +343,9 @@
 <!-- CTA -->
 <section class="cta">
     <div class="container" data-aos="fade-up">
-        <h3>Kunjungi Liang Sipege Sekarang</h3>
+        <h3>Kunjungi Museum Huta Bolon Simanindo</h3>
         <div class="divider"></div>
-        <p>Jelajahi keindahan goa alami dengan stalaktit dan stalakmit yang menakjubkan</p>
+        <p>Selami warisan budaya Batak Toba melalui arsitektur kuno, koleksi artefak leluhur, dan pertunjukan Tor-Tor serta Sigale-gale yang memukau</p>
         <a href="{{ url('/') }}" class="cta-btn">Kembali ke Beranda</a>
     </div>
 </section>
@@ -343,16 +355,15 @@
     <div class="lightbox-close" onclick="closeLightbox()">×</div>
     <img id="lightboxImg">
 </div>
+
 <!-- FOOTER LENGKAP -->
 <footer class="footer-full">
     <div class="footer-full-container">
-        <div class="footer-full-logo">
-            
+        <div class="footer-full-logo"></div>
         <div class="footer-full-btn">
             <a href="{{ url('/') }}" class="back-btn">← Kembali ke Dashboard</a>
         </div>
-        
-        
+    </div>
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -363,17 +374,17 @@
     const hamburger = document.getElementById('hamburger');
     const mobileOverlay = document.getElementById('mobileOverlay');
     const mobileClose = document.getElementById('mobileClose');
-    
+
     hamburger.addEventListener('click', () => {
         mobileOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
     });
-    
+
     const closeMenu = () => {
         mobileOverlay.classList.remove('active');
         document.body.style.overflow = '';
     };
-    
+
     mobileClose.addEventListener('click', closeMenu);
     document.querySelectorAll('.mobile-link').forEach(link => {
         link.addEventListener('click', closeMenu);
@@ -415,4 +426,4 @@
     });
 </script>
 </body>
-</html> 
+</html>
