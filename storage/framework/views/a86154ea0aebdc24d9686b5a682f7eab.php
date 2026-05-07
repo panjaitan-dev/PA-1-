@@ -1084,7 +1084,7 @@
     <div class="hero-content">
         <div>
             <div class="hero-subtitle">Global Geopark</div>
-            <h1 class="hero-title">BALIGE · MEAT · BATU BAHISAN<br>LIANG SIPEGE</h1>
+            <h1 class="hero-title"> SIMANINDO - BATUHODA</h1>
             <div class="hero-divider"></div>
             <a href="#destinasi" class="hero-btn">Jelajahi Sekarang</a>
         </div>
@@ -1142,7 +1142,7 @@
         <div class="section-title" data-aos="fade-up" data-aos-duration="800">
             <h2>Destinasi Unggulan</h2>
             <div class="divider"></div>
-            <p>Tiga geosite di Pulau Sibandang, Caldera Danau Toba</p>
+            <p>Tiga geosite di simanindo-batuhoda, Caldera Danau Toba</p>
         </div>
         <div class="destinasi-list">
             
@@ -1155,7 +1155,7 @@
                     <div class="destinasi-number">01 — GEOSITE</div>
                     <h3>Meat</h3>
                     <div class="destinasi-location">Desa Tampahan, Kecamatan Tampahan, Kabupaten Toba</div>
-                    <p class="destinasi-desc">Desa Meat adalah salah satu desa wisata yang terletak di Kecamatan Balige, Kabupaten Toba, di tepi Danau Toba.</p>
+                    <p class="destinasi-desc">Batu Hoda merupakan salah satu destinasi wisata yang terletak di Kecamatan Balige, Kabupaten Toba, di tepi Danau Toba yang menawarkan keindahan alam dan panorama yang memukau</p>
                     <a href="<?php echo e(url('/geosite/meat')); ?>" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
                 </div>
             </div>
