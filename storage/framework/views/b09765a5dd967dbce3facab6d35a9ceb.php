@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="nav-menu">
-            <a href="{{ url('/') }}" class="nav-link home-btn">Home</a>
+            <a href="<?php echo e(url('/')); ?>" class="nav-link home-btn">Home</a>
             <a href="#sejarah" class="nav-link">Sejarah</a>
             <a href="#umkm" class="nav-link">UMKM</a>
             <a href="#penginapan" class="nav-link">Penginapan</a>
@@ -39,7 +39,7 @@
 
 <div class="mobile-overlay" id="mobileOverlay">
     <div class="mobile-close" id="mobileClose">×</div>
-    <a href="{{ url('/') }}" class="mobile-link mobile-home">Home</a>
+    <a href="<?php echo e(url('/')); ?>" class="mobile-link mobile-home">Home</a>
     <a href="#sejarah" class="mobile-link">Sejarah</a>
     <a href="#umkm" class="mobile-link">UMKM</a>
     <a href="#penginapan" class="mobile-link">Penginapan</a>
@@ -280,23 +280,23 @@
 
         <div class="galeri-grid" id="galeriGrid">
 
-            @for($i=1;$i<=4;$i++)
+            <?php for($i=1;$i<=4;$i++): ?>
                 <div class="galeri-item pantai1">
-                    <img src="/image/batuhoda/pantai-{{$i}}.jpg" alt="Pantai Batu Hoda - Foto {{$i}}" loading="lazy">
+                    <img src="/image/batuhoda/pantai-<?php echo e($i); ?>.jpg" alt="Pantai Batu Hoda - Foto <?php echo e($i); ?>" loading="lazy">
                 </div>
-            @endfor
+            <?php endfor; ?>
 
-            @for($i=1;$i<=4;$i++)
+            <?php for($i=1;$i<=4;$i++): ?>
                 <div class="galeri-item pantai2" style="display:none">
-                    <img src="/image/batuhoda/camping-{{$i}}.jpg" alt="Camping dan Sunset - Foto {{$i}}" loading="lazy">
+                    <img src="/image/batuhoda/camping-<?php echo e($i); ?>.jpg" alt="Camping dan Sunset - Foto <?php echo e($i); ?>" loading="lazy">
                 </div>
-            @endfor
+            <?php endfor; ?>
 
-            @for($i=1;$i<=4;$i++)
+            <?php for($i=1;$i<=4;$i++): ?>
                 <div class="galeri-item pantai3" style="display:none">
-                    <img src="/image/batuhoda/wisata-{{$i}}.jpg" alt="Spot Foto dan Wisata - Foto {{$i}}" loading="lazy">
+                    <img src="/image/batuhoda/wisata-<?php echo e($i); ?>.jpg" alt="Spot Foto dan Wisata - Foto <?php echo e($i); ?>" loading="lazy">
                 </div>
-            @endfor
+            <?php endfor; ?>
 
         </div>
     </div>
@@ -381,7 +381,7 @@
         </p>
 
         <div class="cta-buttons">
-            <a href="{{ url('/') }}" class="cta-btn">Kembali ke Beranda</a>
+            <a href="<?php echo e(url('/')); ?>" class="cta-btn">Kembali ke Beranda</a>
             <a href="#penginapan" class="cta-btn cta-btn-secondary">Pesan Penginapan</a>
         </div>
     </div>
@@ -401,7 +401,7 @@
             </div>
         </div>
         <div class="footer-nav">
-            <a href="{{ url('/') }}">Home</a>
+            <a href="<?php echo e(url('/')); ?>">Home</a>
             <a href="#sejarah">Sejarah</a>
             <a href="#umkm">UMKM</a>
             <a href="#penginapan">Penginapan</a>
@@ -616,4 +616,4 @@
     });
 </script>
 </body>
-</html>
+</html><?php /**PATH D:\.kuliah\PA 1\PA-1-\resources\views/geosite/meat.blade.php ENDPATH**/ ?>
