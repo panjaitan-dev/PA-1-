@@ -17,7 +17,7 @@ class DestinasiSeeder extends Seeder
                 'deskripsi' => 'Pusat wisata Danau Toba dengan pantai indah'
             ],
             [
-                'nama' => 'Meat',
+                'nama' => 'BatU Hoda',
                 'slug' => 'meat',
                 'gambar' => 'meat.jpg',
                 'deskripsi' => 'Desa wisata tradisional di pinggir danau'
