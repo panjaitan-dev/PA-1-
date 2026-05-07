@@ -318,17 +318,17 @@
         <div class="maps-section">
 
             <!-- Google Maps -->
-            <div class="maps-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127648.68238759038!2d98.657!3d2.759845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031c715b0bed547%3A0x346964c80c83147!2sPantai%20Batuhoda!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
-                    width="100%"
-                    height="420"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+        <div class="maps-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127648.68238759038!2d98.657!3d2.759845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031c715b0bed547%3A0x346964c80c83147!2sPantai%20Batuhoda!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                width="100%"
+                height="420"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
 
             <!-- Informasi Rute -->
             <div class="rute-info">
