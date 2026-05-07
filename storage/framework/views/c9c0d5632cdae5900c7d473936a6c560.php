@@ -1,8 +1,6 @@
-@extends('layouts.app')
+<?php $__env->startSection('title', 'Berita Terkini - Geosite Danau Toba'); ?>
 
-@section('title', 'Berita Terkini - Geosite Danau Toba')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <style>
     /* ========== STACKED SLIP CARDS STYLE - SAME AS GALERI ========== */
@@ -524,9 +522,9 @@
 <section class="news-section">
     <div class="container">
         <div class="stack-container">
-            @php $counter = 1; @endphp
-            @forelse($berita as $item)
-                @php
+            <?php $counter = 1; ?>
+            <?php $__empty_1 = true; $__currentLoopData = $berita; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                <?php
                     // Handle gambar sama seperti galeri
                     if (!empty($item->gambar)) {
                         if (strlen($item->gambar) > 500 && !filter_var($item->gambar, FILTER_VALIDATE_URL)) {
@@ -543,42 +541,42 @@
                     // Excerpt untuk preview
                     $excerpt = strip_tags($item->konten);
                     $excerpt = Str::limit($excerpt, 80);
-                @endphp
+                ?>
                 
-                <div class="slip-card" onclick="openReader({{ $item->id }})">
+                <div class="slip-card" onclick="openReader(<?php echo e($item->id); ?>)">
                     <div class="slip-image">
-                        <img src="{{ $imageSrc }}" 
-                             alt="{{ $item->judul }}" 
+                        <img src="<?php echo e($imageSrc); ?>" 
+                             alt="<?php echo e($item->judul); ?>" 
                              loading="lazy" 
-                             onerror="this.src='{{ asset('image/default.jpg') }}'">
+                             onerror="this.src='<?php echo e(asset('image/default.jpg')); ?>'">
                         <div class="slip-overlay">
                             <span class="slip-category">BERITA</span>
-                            <div class="slip-title-overlay">{{ Str::limit($item->judul, 35) }}</div>
+                            <div class="slip-title-overlay"><?php echo e(Str::limit($item->judul, 35)); ?></div>
                         </div>
                     </div>
                     <div class="slip-info">
                         <div class="slip-line"></div>
-                        <div class="slip-title">{{ Str::limit($item->judul, 30) }}</div>
-                        <div class="slip-excerpt">{{ $excerpt }}</div>
+                        <div class="slip-title"><?php echo e(Str::limit($item->judul, 30)); ?></div>
+                        <div class="slip-excerpt"><?php echo e($excerpt); ?></div>
                         <div class="slip-date">
                             <i class="fas fa-calendar-alt"></i>
-                            <span>{{ \Carbon\Carbon::parse($item->created_at)->translatedFormat('d M Y') }}</span>
+                            <span><?php echo e(\Carbon\Carbon::parse($item->created_at)->translatedFormat('d M Y')); ?></span>
                         </div>
                         <div class="slip-views">
                             <i class="fas fa-eye"></i>
-                            <span>{{ $item->views ?? 0 }}</span>
+                            <span><?php echo e($item->views ?? 0); ?></span>
                         </div>
-                        <div class="slip-number">#{{ str_pad($counter, 3, '0', STR_PAD_LEFT) }}</div>
+                        <div class="slip-number">#<?php echo e(str_pad($counter, 3, '0', STR_PAD_LEFT)); ?></div>
                     </div>
                 </div>
-                @php $counter++; @endphp
-            @empty
+                <?php $counter++; ?>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                 <div class="empty-news">
                     <i class="fas fa-newspaper"></i>
                     <h3>Belum Ada Berita</h3>
                     <p style="color: #999; margin-top: 10px;">Silakan tambah berita melalui panel admin.</p>
                 </div>
-            @endforelse
+            <?php endif; ?>
         </div>
     </div>
 </section>
@@ -621,14 +619,14 @@
 
 <script>
     // Data berita dari server
-    const newsData = @json($berita->items());
+    const newsData = <?php echo json_encode($berita->items(), 15, 512) ?>;
 
     function openReader(id) {
         const item = newsData.find(x => x.id === id);
         if(!item) return;
 
         // Handle gambar untuk reader
-        let imgSrc = '{{ asset("image/default.jpg") }}';
+        let imgSrc = '<?php echo e(asset("image/default.jpg")); ?>';
         
         if (item.gambar && item.gambar.trim() !== '') {
             if (item.gambar.length > 500 && !item.gambar.startsWith('http')) {
@@ -636,7 +634,7 @@
             } else if (item.gambar.startsWith('http')) {
                 imgSrc = item.gambar;
             } else if (item.gambar) {
-                imgSrc = '{{ asset("storage") }}/' + item.gambar;
+                imgSrc = '<?php echo e(asset("storage")); ?>/' + item.gambar;
             }
         }
 
@@ -666,7 +664,7 @@
         fetch(`/api/berita/${id}/view`, { 
             method: 'POST', 
             headers: { 
-                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                'X-CSRF-TOKEN': '<?php echo e(csrf_token()); ?>',
                 'Content-Type': 'application/json'
             } 
         }).catch(err => console.log('View increment error:', err));
@@ -703,4 +701,5 @@
     });
 </script>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\PA-1-\resources\views/pages/berita.blade.php ENDPATH**/ ?>
