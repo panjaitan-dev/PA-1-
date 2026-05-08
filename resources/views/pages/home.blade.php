@@ -1155,9 +1155,9 @@
                 </div>
                 <div class="destinasi-content">
                     <div class="destinasi-number">01 — GEOSITE</div>
-                    <h3>Meat</h3>
-                    <div class="destinasi-location">Desa Tampahan, Kecamatan Tampahan, Kabupaten Toba</div>
-                    <p class="destinasi-desc">Batu Hoda merupakan salah satu destinasi wisata yang terletak di Kecamatan Balige, Kabupaten Toba, di tepi Danau Toba yang menawarkan keindahan alam dan panorama yang memukau</p>
+                    <h3>Pantai Batuhoda</h3>
+                    <div class="destinasi-location">Simanindo, Kabupaten Samosir</div>
+                    <p class="destinasi-desc">Batu Hoda merupakan salah satu destinasi wisata yang terletak di Kecamatan Simanindo, Kabupaten samosir, di tepi Danau Toba yang menawarkan keindahan alam dan panorama yang memukau</p>
                     <a href="{{ url('/geosite/meat') }}" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
                 </div>
             </div>
@@ -1169,9 +1169,9 @@
                 </div>
                 <div class="destinasi-content">
                     <div class="destinasi-number">02 — GEOSITE</div>
-                    <h3>Batu Bahisan</h3>
-                    <div class="destinasi-location">Desa Aek Bolon Jae, Balige</div>
-                    <p class="destinasi-desc">Batu Basiha merupakan salah satu situs batu bersejarah di kawasan Balige yang memiliki nilai budaya dan legenda dalam masyarakat Batak Toba.</p>
+                    <h3>Batu Passa Liang Sipogu</h3>
+                    <div class="destinasi-location">Simanindo, Kabupaten Samosir</div>
+                    <p class="destinasi-desc">Batu Passa merupakan destinasi wisata alam dan budaya di kawasan Danau Toba yang terkenal dengan formasi batu unik serta pemandangan alam yang indah. Tempat ini menawarkan suasana tenang dan cocok dijadikan lokasi berwisata, berfoto, maupun menikmati keindahan alam khas Pulau Samosir..</p>
                     <a href="{{ url('/geosite/batu-bahisan') }}" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
                 </div>
             </div>
@@ -1183,9 +1183,9 @@
                 </div>
                 <div class="destinasi-content">
                     <div class="destinasi-number">03 — GEOSITE</div>
-                    <h3>Liang Sipege</h3>
-                    <div class="destinasi-location">Hutagaol Peatalun, Balige</div>
-                    <p class="destinasi-desc">Gua Liang Sipege adalah destinasi wisata alam yang terletak di Desa Simarmar Pea Talun Hutagaol, Kecamatan Balige, Kabupaten Toba.</p>
+                    <h3>Museum Huta Bolon Simanindo</h3>
+                    <div class="destinasi-location">Simanindo, Kabupaten Samosir</div>
+                    <p class="destinasi-desc">Museum Huta Bolon Simanindo merupakan destinasi wisata budaya Batak di Pulau Samosir yang menampilkan rumah adat tradisional, koleksi peninggalan bersejarah, serta pertunjukan tari Sigale-gale yang khas.</p>
                     <a href="{{ url('/geosite/liang-sipege') }}" class="destinasi-link">Jelajahi Lebih Lanjut →</a>
                 </div>
             </div>

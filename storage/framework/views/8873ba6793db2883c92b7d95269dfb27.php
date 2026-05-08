@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="nav-menu">
-            <a href="{{ url('/') }}" class="nav-link home-btn">Home</a>
+            <a href="<?php echo e(url('/')); ?>" class="nav-link home-btn">Home</a>
             <a href="#sejarah" class="nav-link">Sejarah</a>
             <a href="#koleksi" class="nav-link">Koleksi</a>
             <a href="#atraksi" class="nav-link">Atraksi Budaya</a>
@@ -39,7 +39,7 @@
 
 <div class="mobile-overlay" id="mobileOverlay">
     <div class="mobile-close" id="mobileClose">×</div>
-    <a href="{{ url('/') }}" class="mobile-link mobile-home">Home</a>
+    <a href="<?php echo e(url('/')); ?>" class="mobile-link mobile-home">Home</a>
     <a href="#sejarah" class="mobile-link">Sejarah</a>
     <a href="#koleksi" class="mobile-link">Koleksi</a>
     <a href="#atraksi" class="mobile-link">Atraksi Budaya</a>
@@ -282,23 +282,23 @@
 
         <div class="galeri-grid" id="galeriGrid">
 
-            @for($i=1;$i<=4;$i++)
+            <?php for($i=1;$i<=4;$i++): ?>
                 <div class="galeri-item arsitektur">
-                    <img src="/image/hutabolon/arsitektur-{{$i}}.jpg" alt="Arsitektur Huta Bolon - Foto {{$i}}" loading="lazy">
+                    <img src="/image/hutabolon/arsitektur-<?php echo e($i); ?>.jpg" alt="Arsitektur Huta Bolon - Foto <?php echo e($i); ?>" loading="lazy">
                 </div>
-            @endfor
+            <?php endfor; ?>
 
-            @for($i=1;$i<=4;$i++)
+            <?php for($i=1;$i<=4;$i++): ?>
                 <div class="galeri-item artefak" style="display:none">
-                    <img src="/image/hutabolon/artefak-{{$i}}.jpg" alt="Koleksi Artefak - Foto {{$i}}" loading="lazy">
+                    <img src="/image/hutabolon/artefak-<?php echo e($i); ?>.jpg" alt="Koleksi Artefak - Foto <?php echo e($i); ?>" loading="lazy">
                 </div>
-            @endfor
+            <?php endfor; ?>
 
-            @for($i=1;$i<=4;$i++)
+            <?php for($i=1;$i<=4;$i++): ?>
                 <div class="galeri-item pertunjukan" style="display:none">
-                    <img src="/image/hutabolon/pertunjukan-{{$i}}.jpg" alt="Pertunjukan Budaya - Foto {{$i}}" loading="lazy">
+                    <img src="/image/hutabolon/pertunjukan-<?php echo e($i); ?>.jpg" alt="Pertunjukan Budaya - Foto <?php echo e($i); ?>" loading="lazy">
                 </div>
-            @endfor
+            <?php endfor; ?>
 
         </div>
     </div>
@@ -320,17 +320,17 @@
         <div class="maps-section">
 
             <!-- Google Maps -->
-            <div class="maps-container">
-                <iframe
-                    src="https://www.google.com/maps?q=Museum+Huta+Bolon+Simanindo&hl=id&z=17&output=embed"
-                    width="100%"
-                    height="420"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+<div class="maps-container">
+    <iframe
+        src="https://www.google.com/maps?q=Museum+Huta+Bolon+Simanindo&hl=id&z=17&output=embed"
+        width="100%"
+        height="420"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
 
             <!-- Informasi Rute -->
             <div class="rute-info">
@@ -384,7 +384,7 @@
         </p>
 
         <div class="cta-buttons">
-            <a href="{{ url('/') }}" class="cta-btn">Kembali ke Beranda</a>
+            <a href="<?php echo e(url('/')); ?>" class="cta-btn">Kembali ke Beranda</a>
             <a href="#lokasi" class="cta-btn cta-btn-secondary">Lihat Lokasi</a>
         </div>
     </div>
@@ -404,7 +404,7 @@
             </div>
         </div>
         <div class="footer-nav">
-            <a href="{{ url('/') }}">Home</a>
+            <a href="<?php echo e(url('/')); ?>">Home</a>
             <a href="#sejarah">Sejarah</a>
             <a href="#koleksi">Koleksi</a>
             <a href="#atraksi">Atraksi Budaya</a>
@@ -620,3 +620,4 @@
 </script>
 </body>
 </html>
+<?php /**PATH D:\.kuliah\PA 1\PA-1-\resources\views/geosite/liang-sipege.blade.php ENDPATH**/ ?>
